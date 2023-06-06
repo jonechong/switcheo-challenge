@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 1</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Your content and JavaScript code will go here -->
+        <div>Problem 1:</div>
+        <div>
+            <span>Enter number:</span>
+            <input id="inputNumber" type="number" placeholder="integer" />
+        </div>
+        <div>
+            <button
+                onclick="sum_to_n_a(parseInt(document.getElementById('inputNumber').value))"
+            >
+                Function A
+            </button>
+            <button
+                onclick="sum_to_n_b(parseInt(document.getElementById('inputNumber').value))"
+            >
+                Function B
+            </button>
+            <button
+                onclick="sum_to_n_c(parseInt(document.getElementById('inputNumber').value))"
+            >
+                Function C
+            </button>
+        </div>
+        <div>
+            <p>Output:</p>
+            <span id="output1"></span>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

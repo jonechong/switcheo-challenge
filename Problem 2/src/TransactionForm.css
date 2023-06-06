@@ -1,0 +1,192 @@
+.asterick {
+    width: 1%;
+    height: 80%;
+    color: red;
+    /* margin: 1%; */
+    vertical-align: top;
+}
+
+#failureMessage {
+    text-align: center;
+    font-size: 5rem;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.Form {
+    margin: 7% 7% 7% 7%;
+    width: 85%;
+    height: max-content;
+    background-color: #e7e9ed;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.FormTitle {
+    width: 100%;
+    padding-left: 7%;
+    padding-top: 2%;
+    font-size: 4rem;
+}
+
+.FormDivider {
+    margin: 0;
+    margin-bottom: 2%;
+    width: 100%;
+    height: 1px;
+    padding: 0;
+}
+
+.inputField {
+    width: 90%;
+    height: 100%;
+    border-radius: 35px;
+    background-color: #d4d4d4;
+    border-width: 0;
+    font-size: large;
+    padding-left: 2%;
+}
+
+.inputField::placeholder {
+    opacity: 50%;
+    font-size: large;
+}
+
+#invalidAddress {
+    font-size: large;
+    color: red;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: none;
+}
+
+#invalidAmount {
+    font-size: large;
+    color: red;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: none;
+}
+
+#invalidOTP {
+    font-size: large;
+    color: red;
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: none;
+}
+
+.OTPField {
+    width: 60%;
+}
+
+.remarksField {
+    width: 91%;
+}
+
+.returnButton {
+    width: 50%;
+    margin-bottom: 5%;
+    align-self: center;
+    font-size: 3rem;
+    border-radius: 35px;
+    border-width: 0;
+    background-color: #3c3c3c;
+    color: #ffffff;
+    height: 8rem;
+    cursor: pointer;
+}
+.returnButton:active {
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+    /* Moving button 4px to y-axis */
+}
+
+.requiredField {
+    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    width: auto;
+    align-items: center;
+}
+
+.sendOTPButton {
+    font-size: 1.5rem;
+    margin-left: 5%;
+    width: 25%;
+    border-radius: 35px;
+    color: #ffffff;
+    background-color: #777777;
+    height: 100%;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.sendOTPButton:active {
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+    /* Moving button 4px to y-axis */
+}
+
+.submitButton {
+    width: 90%;
+    margin: 5%;
+    border-radius: 35px;
+    border-width: 0;
+    margin-top: 3%;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #3c3c3c;
+    height: 5rem;
+    cursor: pointer;
+}
+.submitButton:active {
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
+    /* Moving button 4px to y-axis */
+}
+
+#successMessage {
+    text-align: center;
+    font-size: 5rem;
+    padding: 5%;
+}
+
+.TransactionBackground {
+    background-image: url("Background.png");
+    background-size: contain;
+    min-height: 100vh;
+    display: grid;
+}
+@media (min-width: 992px) {
+    .Form {
+        margin-top: 5%;
+        margin-left: 25%;
+        width: 50%;
+        background-color: #e7e9ed;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .TransactionBackground {
+        background-image: url("Background.png");
+        background-size: contain;
+        height: 100%;
+        display: grid;
+    }
+    #failureMessage {
+        font-size: 4rem;
+    }
+    #successMessage {
+        font-size: 3rem;
+    }
+}
